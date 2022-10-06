@@ -1,0 +1,11 @@
+.blue-gradient {
+    margin-bottom: 20px;
+}
+.blue-gradient {
+    max-width: 218px;
+    height: 3px;
+    background-image: linear-gradient(to right, #0573ad, #FFF);
+}
+.c-blue-search {
+    color: #0775ad;
+}

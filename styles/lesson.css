@@ -1,0 +1,16 @@
+#listVideo .card.active, #listVideo .card:hover {
+    background-color: #d7ebfa;
+    color: #0674ad;
+    font-weight: bold;
+    border: 1px solid;
+}
+#listVideo .card {
+    background: #0e518b;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    flex-direction: row !important;
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, .125);
+    padding: 5px 0;
+}
