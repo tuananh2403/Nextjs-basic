@@ -1,20 +1,15 @@
-import React, { Component } from "react";
-import {listDocuments} from '../../shared/data/dataLibrary'
+import React, { Component } from "react"
+import { useSelector } from "react-redux"
 import Image from 'next/image'
 import DefaultLayout from '../../layout/defaultLayout/defaultLayout'
 
-export default class Courses extends Component {
-  constructor(props){
-    super(props);
-    this.state = {
-      listDocuments: listDocuments,
-  }}
-  render() {
-    const listDocuments = this.state.listDocuments.map((document) => {
+export default function Courses () {
+  const documents = useSelector((state) => state.library)
+    const listDocuments = documents.doucment.map((document) => {
       return (
         <a
         className="col-lg-4 col-md-3 py-4 col-sm-12 hover-scale hover-orange t-de-none"
-        href="/content2"
+        href={`courses/${document.id}`}
       >
         <Image
           src={document.image}
@@ -45,4 +40,4 @@ export default class Courses extends Component {
           </DefaultLayout>
     );
   }
-}
+

@@ -1,21 +1,14 @@
 import React, { Component } from "react";
-import {dataVideos} from '../../shared/data/dataRefer'
 import Image from 'next/image';
 import DefaultLayout from "../../layout/defaultLayout/defaultLayout";
-
-export default class Videos extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      videos : dataVideos,
-    }
-  }
-  render() {
-    const videos = this.state.videos.map((video) => {
+import { useSelector } from "react-redux";
+export default function Videos  () {
+    const data = useSelector((state) => state.refer.video)
+    const videos = data.map((video) => {
       return (
         <a
                 className="col-lg-4 col-md-4 col-sm-6 t-de-none t-a-center py-4 hover-scale"
-                href="lesson.html"
+                href={`/videos/${video.id}`}
               >
                 <Image
                   src={video.image}
@@ -53,4 +46,4 @@ export default class Videos extends Component {
             </DefaultLayout>
     );
   }
-}
+

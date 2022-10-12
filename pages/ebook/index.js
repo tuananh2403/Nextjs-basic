@@ -1,21 +1,16 @@
 import React, { Component } from "react";
-import {dataDocumentStem} from '../../shared/data/dataDocumentStem'
 import Image from 'next/image'
 import DefaultLayout from "../../layout/defaultLayout/defaultLayout";
+import { useSelector } from "react-redux";
 
-export default class DocumentStem extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      dataStems: dataDocumentStem,
-    }
-  }
-  render() {
-    const dataStems = this.state.dataStems.map((dataStem) => {
+
+export default function DocumentStem  () {
+  const listDocument = useSelector((state) => state.document)
+    const dataStems = listDocument.stem.map((dataStem) => {
       return (
         <a
                 className="col-lg-3 col-md-3 py-4 col-sm-12 hover-scale hover-orange t-de-none"
-                href="content2"
+                href={`/ebook/${dataStem.id}`}
               >
                 <Image
                   src={dataStem.image}
@@ -44,5 +39,5 @@ export default class DocumentStem extends Component {
       </div>
         </DefaultLayout>
     );
-  }
+  
 }

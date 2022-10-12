@@ -1,19 +1,14 @@
-import '../styles/index.css'
-import '../styles/topics.css'
-import '../styles/smart.css'
-import '../styles/lesson.css'
-import '../styles/Jobs.css'
-import '../styles/job.css'
-import '../styles/exercise.css'
-import '../styles/documentstem.css'
-import '../styles/documentlaw.css'
 
-
-
+import '../styles/style.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Provider } from 'react-redux';
+import store from './store'
+
+
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  return  <Provider store={store}><Component {...pageProps} /></Provider>
+
 }
 
 export default MyApp

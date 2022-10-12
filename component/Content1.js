@@ -8,7 +8,7 @@ export default class Content1 extends Component {
               <div className="container">
                 <input type="text" defaultValue="N000007" id="idNews" className="d-none" name />
                 <div className="row">
-                  <a className="col-12 f-s-30 f-f-Gilroy-Bold" href="/newstem" style={{color: '#0775ad', textDecoration: 'none'}}>
+                  <a className="col-12 f-s-30 f-f-Gilroy-Bold" href="/news" style={{color: '#0775ad', textDecoration: 'none'}}>
                     <i className="fa fa-arrow-right" aria-hidden="true" /> Tin tức
                     <div className="blue-gradient" style={{minWidth: '180px'}} />
                   </a>
@@ -42,7 +42,7 @@ export default class Content1 extends Component {
                       như cối xây gió, máy bắn đá, thuyền buồm,…
                     </p>
                     <p>
-                      <img alt="Tiết học không sách vở khiến cô trò Hà Nội thích thú" src="./assets/images/content-new1/kham-pha-tiet-hoc-khong-sach-vo-khien-co-tro-ha-noi-deu-thich-thu-12.jpg" />
+                      <img alt="Tiết học không sách vở khiến cô trò Hà Nội thích thú" src="https://vnn-imgs-f.vgcloud.vn/2019/10/16/11/kham-pha-tiet-hoc-khong-sach-vo-khien-co-tro-ha-noi-deu-thich-thu-12.jpg" />
                     </p>
                     <p>
                       Học sinh của Trường THCS Vân Hồ (Hai Bà Trưng, Hà Nội) háo hức
@@ -80,7 +80,7 @@ export default class Content1 extends Component {
                       Hiệu trưởng trường THCS Vân Hồ chia sẻ.
                     </p>
                     <p>
-                      <img alt="Tiết học không sách vở khiến cô trò Hà Nội thích thú" src="./assets/images/content-new1/kham-pha-tiet-hoc-khong-sach-vo-khien-co-tro-ha-noi-deu-thich-thu-9.jpg" />
+                      <img alt="Tiết học không sách vở khiến cô trò Hà Nội thích thú" src="https://vnn-imgs-f.vgcloud.vn/2019/10/16/11/kham-pha-tiet-hoc-khong-sach-vo-khien-co-tro-ha-noi-deu-thich-thu-9.jpg" />
                     </p>
                     <p>
                       Giáo dục STEM tới đây sẽ chính thức được đưa vào trong các trường
@@ -96,7 +96,7 @@ export default class Content1 extends Component {
                       các tài nguyên là phế liệu để tái chế.
                     </p>
                     <p>
-                      <img alt="Tiết học không sách vở khiến cô trò Hà Nội thích thú" src="./assets/images/content-new1/kham-pha-tiet-hoc-khong-sach-vo-khien-co-tro-ha-noi-deu-thich-thu-6.jpg" />
+                      <img alt="Tiết học không sách vở khiến cô trò Hà Nội thích thú" src="https://vnn-imgs-f.vgcloud.vn/2019/10/16/11/kham-pha-tiet-hoc-khong-sach-vo-khien-co-tro-ha-noi-deu-thich-thu-6.jpg" />
                     </p>
                     <p>
                       Để tạo ra được những sản phẩm cụ thể, các em phải ứng dụng thực tế
@@ -127,50 +127,50 @@ export default class Content1 extends Component {
                       phải học đại học”.
                     </p>
                     <p>
-                      <img alt="Tiết học không sách vở khiến cô trò Hà Nội thích thú" src="./assets/images/content-new1/kham-pha-tiet-hoc-khong-sach-vo-khien-co-tro-ha-noi-deu-thich-thu-11.jpg" />
+                      <img alt="Tiết học không sách vở khiến cô trò Hà Nội thích thú" src="https://vnn-imgs-f.vgcloud.vn/2019/10/16/11/kham-pha-tiet-hoc-khong-sach-vo-khien-co-tro-ha-noi-deu-thich-thu-11.jpg" />
                     </p>
                     <p>
                       Khám phá tiết học không sách vở khiến cô trò Hà Nội đều thích thú
                     </p>
                     <p>
-                      <img alt="Tiết học không sách vở khiến cô trò Hà Nội thích thú" src="./assets/images/content-new1/kham-pha-tiet-hoc-khong-sach-vo-khien-co-tro-ha-noi-deu-thich-thu-5.jpg" />
+                      <img alt="Tiết học không sách vở khiến cô trò Hà Nội thích thú" src="https://vnn-imgs-f.vgcloud.vn/2019/10/16/11/kham-pha-tiet-hoc-khong-sach-vo-khien-co-tro-ha-noi-deu-thich-thu-5.jpg" />
                     </p>
                     <p>
                       Từ những vật liệu giản đơn như chai lọ hay những mảnh gỗ nhỏ, các
                       học sinh từ lớp 6 – 9 đã có thể tạo nên những sản phẩm đặc biệt
                     </p>
                     <p>
-                      <img alt="Tiết học không sách vở khiến cô trò Hà Nội thích thú" src="./assets/images/content-new1/kham-pha-tiet-hoc-khong-sach-vo-khien-co-tro-ha-noi-deu-thich-thu-8.jpg" />
+                      <img alt="Tiết học không sách vở khiến cô trò Hà Nội thích thú" src="https://vnn-imgs-f.vgcloud.vn/2019/10/16/11/kham-pha-tiet-hoc-khong-sach-vo-khien-co-tro-ha-noi-deu-thich-thu-8.jpg" />
                     </p>
                     <p>
                       Với đôi bàn tay thoăn thoắt nhuần nhuyễn việc cầm cưa cắt gỗ, các
                       cô cậu học trò được thỏa sức sáng tạo
                     </p>
                     <p>
-                      <img alt="Tiết học không sách vở khiến cô trò Hà Nội thích thú" src="./assets/images/content-new1/kham-pha-tiet-hoc-khong-sach-vo-khien-co-tro-ha-noi-deu-thich-thu-2.jpg" />
+                      <img alt="Tiết học không sách vở khiến cô trò Hà Nội thích thú" src="https://vnn-imgs-f.vgcloud.vn/2019/10/16/11/kham-pha-tiet-hoc-khong-sach-vo-khien-co-tro-ha-noi-deu-thich-thu-2.jpg" />
                     </p>
                     <p>
                       Những sản phẩm đặc biệt như cối xây gió, máy bắn đá, thuyền buồm,…
                     </p>
                     <p>
-                      <img alt="Tiết học không sách vở khiến cô trò Hà Nội thích thú" src="./assets/images/content-new1/kham-pha-tiet-hoc-khong-sach-vo-khien-co-tro-ha-noi-deu-thich-thu-4.jpg" />
+                      <img alt="Tiết học không sách vở khiến cô trò Hà Nội thích thú" src="https://vnn-imgs-f.vgcloud.vn/2019/10/16/11/kham-pha-tiet-hoc-khong-sach-vo-khien-co-tro-ha-noi-deu-thich-thu-4.jpg" />
                     </p>
                     <p>Cô trò thích thú với tiết học đặc biệt</p>
                     <p>
-                      <img alt="Tiết học không sách vở khiến cô trò Hà Nội thích thú" src="./assets/images/content-new1/kham-pha-tiet-hoc-khong-sach-vo-khien-co-tro-ha-noi-deu-thich-thu-10.jpg" />
+                      <img alt="Tiết học không sách vở khiến cô trò Hà Nội thích thú" src="https://vnn-imgs-f.vgcloud.vn/2019/10/16/11/kham-pha-tiet-hoc-khong-sach-vo-khien-co-tro-ha-noi-deu-thich-thu-10.jpg" />
                     </p>
                     <p>
-                      <img alt="Tiết học không sách vở khiến cô trò Hà Nội thích thú" src="./assets/images/content-new1/kham-pha-tiet-hoc-khong-sach-vo-khien-co-tro-ha-noi-deu-thich-thu-1.jpg" />
+                      <img alt="Tiết học không sách vở khiến cô trò Hà Nội thích thú" src="https://vnn-imgs-f.vgcloud.vn/2019/10/16/11/kham-pha-tiet-hoc-khong-sach-vo-khien-co-tro-ha-noi-deu-thich-thu-1.jpg" />
                     </p>
                     <p>
                       Hiện tại, nhà trường đang chú trọng vào việc hướng học sinh tạo ra
                       các sản phẩm hạn chế ô nhiễm môi trường
                     </p>
                     <p>
-                      <img alt="Tiết học không sách vở khiến cô trò Hà Nội thích thú" src="./assets/images/content-new1/kham-pha-tiet-hoc-khong-sach-vo-khien-co-tro-ha-noi-deu-thich-thu-7.jpg" />
+                      <img alt="Tiết học không sách vở khiến cô trò Hà Nội thích thú" src="https://vnn-imgs-f.vgcloud.vn/2019/10/16/11/kham-pha-tiet-hoc-khong-sach-vo-khien-co-tro-ha-noi-deu-thich-thu-7.jpg" />
                     </p>
                     <p>
-                      <img alt="Tiết học không sách vở khiến cô trò Hà Nội thích thú" src="./assets/images/content-new1/kham-pha-tiet-hoc-khong-sach-vo-khien-co-tro-ha-noi-deu-thich-thu-3.jpg" />
+                      <img alt="Tiết học không sách vở khiến cô trò Hà Nội thích thú" src="https://vnn-imgs-f.vgcloud.vn/2019/10/16/11/kham-pha-tiet-hoc-khong-sach-vo-khien-co-tro-ha-noi-deu-thich-thu-3.jpg" />
                     </p>
                     <p>
                       Cô Lâm khẳng định nếu làm tốt việc giáo dục STEM ở những cấp THCS

@@ -1,19 +1,12 @@
-import React, { Component } from 'react';
-import {dataRefer} from '../../shared/data/dataRefer'
+import React from 'react';
 import Image from 'next/image';
 import DefaultLayout from '../../layout/defaultLayout/defaultLayout'
-
-export default class Refer extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      dataRefer : dataRefer,
-    }
-  }
-    render() {
-      const dataRefer = this.state.dataRefer.map((refer) => {
+import { useSelector } from 'react-redux';
+export default function Refer () {
+      const data = useSelector((state) => state.refer.refer)
+      const dataRefer = data.map((refer) => {
         return (
-          <a className="col-lg-6 col-md-6 col-sm-6 t-de-none t-a-center py-4 hover-scale" href="/refer1">
+          <a className="col-lg-6 col-md-6 col-sm-6 t-de-none t-a-center py-4 hover-scale" href={`refer/${refer.id}`}>
                 <Image src={refer.image} className="m-w-100 pb-1" />
                 <p className="f-f-SFProDisplay-Bold t-c-red" style={{minWidth: '60%'}} />
               </a>
@@ -39,4 +32,3 @@ export default class Refer extends Component {
           </DefaultLayout>
         )
     }
-}

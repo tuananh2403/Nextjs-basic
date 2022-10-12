@@ -1,10 +1,12 @@
 import {useRouter} from 'next/dist/client/router';
-import {detailNews} from '../../shared/data/detailNew'
+import Content1 from '../../component/Content1'
+import DefaultLayout from '../../layout/defaultLayout/defaultLayout';
 export default function Content(){
     const router = useRouter();
-    const content = detailNews[0].content;
-    console.log(content);
     return (
-        {content}
+        <DefaultLayout>
+            <Content1/>
+        </DefaultLayout>
     )
+    
 }

@@ -1,23 +1,17 @@
 import React, { Component } from "react";
-import {dataDocumentLaw} from '../../shared/data/dataDocumentLaw'
 import DefaultLayout from '../../layout/defaultLayout/defaultLayout'
+import { useSelector } from "react-redux";
 
-export default class DocumentLaw extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      documentLaw :dataDocumentLaw,
-    }
-  }
-  render() {
-    const dataLaws = this.state.documentLaw.map((dataLaw) => {
+export default function DocumentLaw () {
+  const listDocument = useSelector((state) => state.document)
+    const dataLaws = listDocument.law.map((dataLaw) => {
       return (
         <tr>
           <td className="f-f-Gilroy-Bold t-c-black">{dataLaw.number}</td>
            <td className="f-f-Gilroy-Bold t-c-black">{dataLaw.startDay}</td>
           <td>
              <a
-               href="/content2"
+               href={`/documents/${dataLaw.id}`}
                         className="f-f-Gilroy-Bold f-s-16 t-c-black hover-green t-de-none text-uppercase"
             >
              {dataLaw.abstract}
@@ -62,5 +56,5 @@ export default class DocumentLaw extends Component {
       </div>
           </DefaultLayout>
     );
-  }
+  
 }

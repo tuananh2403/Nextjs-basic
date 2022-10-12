@@ -293,7 +293,7 @@ export const majors = [
     },
     {
         id : 30,
-        name : 'Ngành Huấn luyện thể thao',
+        name : 'Ngành Toán tin',
         parentID : 'G01'
     },
     {

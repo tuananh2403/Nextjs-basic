@@ -3,41 +3,15 @@ import { TabContent, TabPane, Nav, NavItem, NavLink } from "reactstrap";
 import classnames from "classnames";
 import {topics,topicClass} from '../../shared/data/dataTopic'
 import DefaultLayout from '../../layout/defaultLayout/defaultLayout'
-import Link from 'next/link'
+import { useSelector } from "react-redux";
 
-export default class Example extends React.Component {
-  constructor(props) {
-    super(props);
-    this.toggle = this.toggle.bind(this);
-    this.contentTopic = this.contentTopic.bind(this);
-    this.state = {
-      dataTopics: topics,
-      activeTab: "1",
-      topicClass: topicClass,
-    };
-  }
-
-  toggle(tab) {
-    if (this.state.activeTab !== tab) {
-      this.setState({
-        activeTab: tab,
-      });
-    }
-  }
-  contentTopic() {
-    window.location.href = "/lesson";
-  }
-  render() {
-    const topics = this.state.dataTopics.map((topic) => {
+export default function Example () {
+  const data = useSelector((state) => state.topic)
+  console.log(data.class)
+    const topics = data.topic.map((topic) => {
       return (
         <NavItem>
           <NavLink
-            className={classnames({
-              active: this.state.activeTab === topic.id.toString(),
-            })}
-            onClick={() => {
-              this.toggle(topic.id.toString());
-            }}
           >
             {topic.class}
           </NavLink>
@@ -56,25 +30,19 @@ export default class Example extends React.Component {
           <div className="blue-gradient" style={{ width: "180px" }}></div>
         </div>
         <Nav tabs>{topics}</Nav>
-        <TabContent activeTab={this.state.activeTab}>
-          {this.state.dataTopics.map((dataTopic) => {
+        <TabContent >
+          {data.class.map((dataTopic) => {
             return (
               <TabPane tabId= {dataTopic.id.toString()}>
                 <div
                   id="Class6"
-                  className={
-                    dataTopic.class === "Lớp 6"
-                      ? "container tab-pane active show"
-                      : "container tab-pane fade show"
-                  }
                   style={{ overflowY: "scroll", height: "690px" }}
                 >
-                   {this.state.topicClass.map((topicclass) =>{ 
+                   {data.class.map((topicclass) =>{ 
                      if (topicclass.parentID === dataTopic.parentID){
                       return (
                         <a
                         className="row t-de-none hover hover-c-grey b-bot py-2"
-                        onClick={() => this.contentTopic()}
                         style={{ alignItems: "center" }}
                       >
                         <div className="col-1 t-a-center">{topicclass.number}</div>{" "}
@@ -96,4 +64,3 @@ export default class Example extends React.Component {
      
     );
   }
-}

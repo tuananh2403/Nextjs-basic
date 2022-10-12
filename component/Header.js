@@ -1,32 +1,16 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Nav, Navbar, NavbarBrand, NavbarToggler, Collapse, NavItem} from 'reactstrap';
 import { DropdownToggle, DropdownMenu, DropdownItem,UncontrolledDropdown } from 'reactstrap';
-import { dataHeader, ChildHeader } from "../shared/data/dataHeader"
+import { toggle } from '../reducer/header';
+import { useSelector, useDispatch } from 'react-redux';
 import Link from 'next/link';
- class Header extends Component {
-    constructor(prop){
-        super(prop);
-        this.state = {
-            data : dataHeader,
-            dataChild : ChildHeader,
-            isNavOpen: false,
-            dropdownOpen: false
-        };
-        this.toggleNav = this.toggleNav.bind(this);
-        this.toggle = this.toggle.bind(this);
-      }
-      toggleNav() {
-        this.setState({
-          isNavOpen: !this.state.isNavOpen
-        });
-      }
-      toggle() {
-        this.setState(prevState => ({
-          dropdownOpen: !prevState.dropdownOpen
-        }));
-      }
-      render(){
-          const menu = this.state.data.map((menu) => {
+ function Header  () {
+   const dataHeader = useSelector((state) => state.header)
+   const dispatch = useDispatch();
+   function toggleNav(){
+      dispatch(toggle());
+   }
+          const menu = dataHeader.header.map((menu) => {
               if (menu.parentId === 0){
                 return (
                     <>
@@ -37,7 +21,7 @@ import Link from 'next/link';
                     </>
                 )
               } else {
-                  const memuChild = this.state.dataChild.map((menuchild,index) =>{
+                  const memuChild = dataHeader.childHeader.map((menuchild,index) =>{
                       if (menuchild.parentId == menu.parentId){
                           return (
                             <>
@@ -70,8 +54,8 @@ import Link from 'next/link';
                       <NavbarBrand href="/">
                           <img src="https://stemtrunghoc.edu.vn/images/logo.png"></img>
                       </NavbarBrand>
-                      <NavbarToggler onClick={this.toggleNav}/>
-                      <Collapse isOpen={this.state.isNavOpen} navbar>
+                      <NavbarToggler onClick={toggleNav}/>
+                      <Collapse isOpen={dataHeader.isOpen} navbar>
                       <Nav navbar mr-auto className="mr-auto align-items-center">
                               {menu}                            
                         </Nav>
@@ -80,5 +64,4 @@ import Link from 'next/link';
               </div>
      )
     }
- }
  export default Header;

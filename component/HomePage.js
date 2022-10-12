@@ -15,7 +15,7 @@ export default class HomePage extends Component {
       const newsContent = this.state.newscontent.map((content,index) => {
         if(index < 4){
         return (
-          <a className="col-lg-3 col-md-6 col-12 my-2 hover-scale" href={content.url} style={{textDecoration: 'none'}}>
+          <a className="col-lg-3 col-md-6 col-12 my-2 hover-scale" href={`/news/${content.id}`} style={{textDecoration: 'none'}}>
                     <div className="row card-image pb-2 mx-auto" style={{height: '100%'}}>
                       <div className="col-12 px-0">
                         <Image src={content.img} style={{width: '100%', height: 'auto'}} />
@@ -56,7 +56,7 @@ export default class HomePage extends Component {
                             STEM”.
                         </div>
             </div>
-          <a className="btn btn-viewmove" id="contentFirstNews" href="/content1">Xem thêm</a>
+          <a className="btn btn-viewmove" id="contentFirstNews" href="/intro">Xem thêm</a>
           </div>
           </div>
         </div>
@@ -127,7 +127,7 @@ export default class HomePage extends Component {
                 viên làm công tác giáo dục hướng nghiệp ở trường trung học thiếu,
                 chưa đáp ứng về chất lượng, trong khi tâm lý chạy theo bằng cấp
                 trong xã hội còn nặng nề.
-                <a href="courses.html" className="f-f-Gilroy-Regular f-s-20 t-de-none" style={{color: '#0053a7'}}>Xem thêm</a>
+                <a href="/courses" className="f-f-Gilroy-Regular f-s-20 t-de-none" style={{color: '#0053a7'}}>Xem thêm</a>
               </p>
             </div>
             <div className="col-md-3 col-sm-12 t-a-center" style={{alignSelf: 'center'}}>
